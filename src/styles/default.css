@@ -1,0 +1,94 @@
+html, body, h1 {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #9ede82;
+}
+
+.app {
+	min-width: 720px;
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translate(-50%, -5%);
+}
+
+.app__form {
+	display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.app__task {
+	display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed #cdcdcd;
+}
+
+.app__sort {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 10px;
+	border-bottom: 1px dashed #cdcdcd;
+}
+
+.app__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 10px;
+}
+
+.app__title {
+	font: bold 52px "Codystar-Regular", sans-serif;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+.app__input {
+	padding: 16px;
+	border: none;
+	outline: none;
+	font: 22px "RobotoCondensed-Regular", sans-serif;
+	border-radius: 12px 12px 0 0;
+}
+
+.app__link {
+	display: inline-block;
+	text-decoration: none;
+	color: #a1a1a1;
+	padding: 10px;
+	cursor: pointer;
+	font: 22px "RobotoCondensed-Regular", sans-serif;
+	transition: color .6s;
+}
+
+.app__link:hover {
+	color: #000;
+}
+
+.app__span {
+	display: inline-block;
+	min-height: 32px;
+	min-width: 32px;
+	cursor: pointer;
+	transition: transform .2s;
+}
+
+.app__span:hover {
+	transform: scale(1.2, 1.2);
+}
+
+.app__span._trash {
+	background: url("../assets/icons/trash.svg") center/32px no-repeat;
+}
+
+.app__message {
+	color: #a1a1a1;
+	font: 18px "RobotoCondensed-Regular", sans-serif;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/default.css">
+		<link rel="stylesheet" href="styles/fonts.css">
+		<link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+		<title>Your TODO manager</title>
+	</head>
+	<body>
+		<div class="app">
+			<h1 class="app__title">TODO</h1>
+
+			<div class="app__form">
+
+				<div class="app__task">
+					<input class="app__input" type="text" placeholder="Что нужно сделать?" />
+				</div>
+
+				<div class="app__sort">
+					<a class="app__link" href="#">Все</a>
+					<a class="app__link" href="#">Сделать</a>
+					<a class="app__link" href="#">Выполнено</a>
+					<span class="app__span _trash"></span>
+				</div>
+
+				<div class="app__list">
+					<p class="app__message">Пусто...</p>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="scripts/bundle.min.js"></script>
+	</body>
+</html>
