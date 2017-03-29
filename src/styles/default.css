@@ -92,3 +92,13 @@ body {
 	color: #a1a1a1;
 	font: 18px "RobotoCondensed-Regular", sans-serif;
 }
+
+@media screen and (max-device-width: 768px) {
+	.app {
+		min-width: 300px;
+	}
+
+	.app__link {
+		font: 18px "RobotoCondensed-Regular", sans-serif;
+	}
+}
