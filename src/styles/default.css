@@ -38,10 +38,24 @@ body {
 
 .app__list {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
 	padding: 10px;
 }
+
+.app__item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 40px;
+	color: #a1a1a1;
+	font: 18px "RobotoCondensed-Regular", sans-serif;
+}
+
+
 
 .app__title {
 	font: bold 52px "Codystar-Regular", sans-serif;
@@ -88,9 +102,10 @@ body {
 	background: url("../assets/icons/trash.svg") center/32px no-repeat;
 }
 
-.app__message {
+.app__item._message {
 	color: #a1a1a1;
 	font: 18px "RobotoCondensed-Regular", sans-serif;
+	justify-content: center;
 }
 
 @media screen and (max-device-width: 768px) {

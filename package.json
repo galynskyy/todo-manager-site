@@ -1,31 +1,28 @@
 {
-  "name": "todo-manager",
+  "name": "project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tools for easy task management",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack-dev-server --content-base ./public --inline --hot"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vdgalynsky/todo-manager.git"
+    "url": "git+https://github.com/galynskyy/todo-manager-site.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vdgalynsky/todo-manager/issues"
+    "url": "https://github.com/galynskyy/todo-manager-site/issues"
   },
-  "homepage": "https://github.com/vdgalynsky/todo-manager#readme",
+  "homepage": "https://github.com/galynskyy/todo-manager-site#readme",
   "dependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.23.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-hot-loader": "^1.3.1",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^6.4.0",
+    "gulp-uglifyjs": "^0.6.2"
   }
 }
