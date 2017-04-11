@@ -8,11 +8,13 @@ body {
 }
 
 .app {
-	min-width: 720px;
+	/*min-width: 720px;
 	position: absolute;
 	left: 50%;
 	top: 5%;
-	transform: translate(-50%, -5%);
+	transform: translate(-50%, -5%);*/
+	max-width: 720px;
+	margin: 20px auto;
 }
 
 .app__form {
@@ -110,7 +112,8 @@ body {
 
 @media screen and (max-device-width: 768px) {
 	.app {
-		min-width: 300px;
+		/*min-width: 300px;*/
+		max-width: 300px;
 	}
 
 	.app__link {
