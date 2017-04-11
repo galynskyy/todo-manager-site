@@ -8,7 +8,7 @@ var uglify = require("gulp-uglifyjs");
 
 gulp.task("default", ["build"]);
 gulp.task("dev", ["build", "browserSync", "watch"]);
-gulp.task("build", ["styles", "html", "js", "assets", "fonts"]);
+gulp.task("build", ["styles", "html", "js", "assets", "ajax", "fonts"]);
 
 gulp.task("styles", function() {
 	return gulp.src("./src/styles/**/*.css")
@@ -20,6 +20,11 @@ gulp.task("styles", function() {
 gulp.task("html", function() {
 	return gulp.src("./src/*.html")
 		.pipe(gulp.dest("./public/"));
+});
+
+gulp.task("ajax", function() {
+	return gulp.src("./src/ajax/*.php")
+		.pipe(gulp.dest("./public/ajax/"));
 });
 
 gulp.task("assets", function() {
